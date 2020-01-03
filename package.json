@@ -22,7 +22,7 @@
     "docker-build": "docker build -t computerbugs .",
     "docker-tag": "docker tag computerbugs:latest docker.io/spazhead/computerbugs:$(git rev-parse HEAD)",
     "docker-push": "docker push docker.io/spazhead/computerbugs:$(git rev-parse HEAD)",
-    "update-k8s": "helm upgrade --namespace websites --kube-context do-sgp1-spazhead-k8s ./helm/computerbugs -f ./helm/computerbugs/values.yaml"
+    "update-k8s": "helm upgrade --namespace websites --kube-context woods ./helm/computerbugs -f ./helm/computerbugs/values.yaml"
   },
   "eslintConfig": {
     "extends": "react-app"
